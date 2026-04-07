@@ -297,5 +297,5 @@ app.post('/api/scrape', async (req, res) => {
         res.status(500).json({ error: 'blocked' });
     }
 });
-
+app.get('/', (req, res) => res.send('OmniCart Online and Running.'));
 app.listen(3000, () => console.log('Running on Port 3000'));
