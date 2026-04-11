@@ -159,7 +159,7 @@ app.post('/api/auth/send-reset-email', async (req, res) => {
             subject: 'Reset your OmniCart password',
             html: `
             <div style="font-family: 'Inter', Helvetica, Arial, sans-serif; color: #0f172a; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e2e8f0; border-radius: 12px;">
-                <img src="https://i.imgur.com/IItCkuw.png" alt="OmniCart Banner" style="width: 100%; border-radius: 8px 8px 0 0; display: block; margin-bottom: 30px;">
+                <img src="https://i.imgur.com/loIOYD8.png" alt="OmniCart Banner" style="width: 100%; border-radius: 8px 8px 0 0; display: block; margin-bottom: 30px;">
                 <div style="padding: 0 20px;">
                     <p style="font-size: 16px; line-height: 1.6;">Hi there,</p>
                     <p style="font-size: 16px; line-height: 1.6;">Someone (hopefully you) requested a password reset for your OmniCart account.</p>
