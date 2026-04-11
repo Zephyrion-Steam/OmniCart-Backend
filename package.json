@@ -1,21 +1,19 @@
 {
-  "name": "my-node-project",
+  "name": "omnicart-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "OmniCart V6 API",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
-    "axios": "^1.14.0",
-    "bcrypt": "^6.0.0",
+    "axios": "^1.15.0",
     "cheerio": "^1.2.0",
     "cors": "^2.8.6",
+    "dotenv": "^17.4.1",
     "express": "^5.2.1",
-    "uuid": "^13.0.0"
+    "firebase-admin": "^13.7.0",
+    "mongoose": "^9.4.1",
+    "nodemailer": "^8.0.5"
   }
 }
