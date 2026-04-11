@@ -11,10 +11,13 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Initialize Firebase Admin (Required for secure tokens)
-const serviceAccount = require('./firebaseServiceAccount.json');
 admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount)
+    credential: admin.credential.cert({
+        projectId: process.env.FIREBASE_PROJECT_ID,
+        clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
+        // The regex replaces literal \n with actual line breaks for the private key
+        privateKey: process.env.FIREBASE_PRIVATE_KEY ? process.env.FIREBASE_PRIVATE_KEY.replace(/\\n/g, '\n') : undefined
+    })
 });
 
 // ==========================================
